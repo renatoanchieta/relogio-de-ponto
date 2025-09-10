@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    background-color: #e2f5e8;
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Inicia oculto */
+}
+
+.resultado.show {
+    display: block;
+}
+
+.banco-de-horas {
+    margin-top: 30px;
+    text-align: left;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.banco-de-horas h3 {
+    margin-top: 0;
+    color: #343a40;
+    border-bottom: 2px solid #ced4da;
+    padding-bottom: 10px;
+}
+
+.banco-de-horas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.banco-de-horas li {
+    background-color: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dee2e6;
+}
+
+.banco-de-horas li strong {
+    color: #007BFF;
+    font-size: 1.1em;
+}
