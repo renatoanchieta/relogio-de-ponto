@@ -1,6 +1,4 @@
-Com certeza! Um bom README.md é essencial para qualquer repositório. Ele serve como o cartão de visitas do seu projeto. Vou criar um modelo completo e profissional, fácil de entender, para que você possa copiar e colar no seu repositório.
-
-Calculadora de Ponto Eletrônico
+###Calculadora de Ponto Eletrônico
 Uma aplicação simples e intuitiva para registrar e calcular as horas de trabalho, com um banco de horas integrado.
 
 <br>
