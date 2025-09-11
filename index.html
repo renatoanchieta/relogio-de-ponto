@@ -9,18 +9,30 @@
 <body>
     <div class="container">
         <h1>Calculadora de Ponto</h1>
+
         <div class="input-group">
-            <label for="entrada">Hora de Entrada:</label>
+            <label for="entrada">Entrada:</label>
             <input type="time" id="entrada">
         </div>
         <div class="input-group">
-            <label for="saida">Hora de Saída:</label>
+            <label for="pausaAlmoco">Pausa Almoço:</label>
+            <input type="time" id="pausaAlmoco">
+        </div>
+        <div class="input-group">
+            <label for="retornoAlmoco">Retorno Almoço:</label>
+            <input type="time" id="retornoAlmoco">
+        </div>
+        <div class="input-group">
+            <label for="saida">Saída:</label>
             <input type="time" id="saida">
         </div>
-        <button id="calcular">Calcular Horas</button>
+
+        <button id="calcular">Registrar Ponto e Calcular Horas</button>
+        <button id="zerarHorasMesAtual" class="btn-secondary">Zerar Horas do Mês Atual</button>
+        
         <div class="resultado" id="resultado"></div>
-    </div>
+        
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
-<!-- alteração no nome da pasta APP -->

@@ -1,20 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    align-items: flex-start; /* Alinha no topo para acomodar o banco de horas */
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    margin: 20px;
 }
 
 .container {
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    width: 350px;
 }
 
 h1 {
@@ -23,34 +24,35 @@ h1 {
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: left;
 }
 
-label {
+.input-group label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 5px;
     color: #555;
+    font-weight: bold;
 }
 
-input[type="time"] {
-    width: 100%;
+.input-group input[type="time"] {
+    width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #007bff;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -58,55 +60,63 @@ button:hover {
     background-color: #0056b3;
 }
 
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
 .resultado {
     margin-top: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #28a745;
-    background-color: #e2f5e8;
     padding: 15px;
-    border-radius: 5px;
-    display: none; /* Inicia oculto */
+    border-radius: 4px;
+    font-weight: bold;
+    display: none; /* Esconde por padrão */
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .resultado.show {
     display: block;
+    opacity: 1;
 }
 
+/* Estilos para o Banco de Horas */
 .banco-de-horas {
     margin-top: 30px;
-    text-align: left;
-    background-color: #e9ecef;
     padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e2e6ea;
     border-radius: 8px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
 .banco-de-horas h3 {
+    color: #333;
     margin-top: 0;
-    color: #343a40;
-    border-bottom: 2px solid #ced4da;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
 
 .banco-de-horas ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .banco-de-horas li {
-    background-color: #f8f9fa;
-    padding: 12px;
-    margin-bottom: 8px;
-    border-radius: 5px;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #dee2e6;
 }
 
-.banco-de-horas li strong {
-    color: #007BFF;
-    font-size: 1.1em;
+.banco-de-horas li:last-child {
+    border-bottom: none;
 }
+
+.banco-de-horas strong {
+    color
