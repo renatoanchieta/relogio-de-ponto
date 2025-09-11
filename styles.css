@@ -119,4 +119,20 @@ button:hover {
 }
 
 .banco-de-horas strong {
-    color
+    color: #007bff;
+}
+
+.banco-de-horas p {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+}
